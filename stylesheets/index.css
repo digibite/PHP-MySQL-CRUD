@@ -1,0 +1,114 @@
+/* Please note that I did add a reset css file due keeping things simple */
+
+:root {
+  --action-btns: #0dadc2;
+}
+
+* {
+  font-family: "Libre Franklin", sans-serif;
+  color: #fff;
+}
+
+body {
+  background: #14424b;
+}
+
+#main-container {
+  width: 500px;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #2b7499;
+}
+
+#content-container {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.input-group {
+  margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+  display: block;
+  text-align: left;
+  margin: 3px;
+}
+
+.input-group input {
+  height: 30px;
+  width: 300px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#name {
+  color: black;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: rgb(25 81 241);
+  border: none;
+  border-radius: 5px;
+}
+
+table {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+.id-column {
+  width: 30px;
+  text-align: left;
+}
+
+.name-column {
+  width: 100px;
+  text-align: left;
+}
+
+.actions-column {
+  text-align: left;
+}
+
+.delete {
+  background: #f84e57;
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit {
+  background-color: var(--action-btns);
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#txtName {
+  color: black;
+  border-style: none;
+  border-radius: 5px;
+}
+
+#save {
+  background-color: var(--action-btns);
+  border-style: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#logout-btn-container {
+  width: 80px;
+  padding-top: 20px;
+}
+a {
+  text-decoration: none;
+}
