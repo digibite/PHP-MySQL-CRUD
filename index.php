@@ -1,10 +1,11 @@
 <?php
-include "db.php";
-include "Session.php";
-Session::checkLogin(); // Checking whether user is logged in to redirect to login.php
+// session_start();
+include 'Session.php';
+// Session::checkSession(); // Checking whether user is logged in to redirect to login.php
+Session::checkSession();
 ?>
 
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -12,13 +13,21 @@ Session::checkLogin(); // Checking whether user is logged in to redirect to logi
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&amp;family=Libre+Franklin:wght@400;500">
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&amp;
+        family=Libre+Franklin:wght@400;500">
     <link rel="stylesheet" href="./stylesheets/index.css">
 
     <script src="./js/index.js"></script>
 </head>
+<script>
+    <?php
+    if (!isset($_SESSION['uid'])) {
+        echo ("let currentUID = -1;\n");
+?>
+</script>
 
 <body>
+
     <div id="main-container">
         <div id="content-container">
             <h2>PHP REST API MySQL AJAX jQuery CRUD Web App</h2>
@@ -45,7 +54,11 @@ Session::checkLogin(); // Checking whether user is logged in to redirect to logi
             
         </div>
     </div>
-
+<?php
+    } else {
+        echo ("var currentUID = " . $_SESSION['uid'] . ";\n");
+    }
+?>
 
 
 </body>

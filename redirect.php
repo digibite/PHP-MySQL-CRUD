@@ -19,10 +19,13 @@
     // In production we would hash the password for security
     $password_hash = $data["password"];
     if ($password == $password_hash) { 
-
-    Session::set("userId", $data["id"]); 
+      Session::set("login", true);
+      Session::set("userId", $data["id"]);
+    
         //redirect user to index.php
-        header("Location: http://localhost/php-ajax-jquery-mysql-crud/index.php");
+        session_write_close();
+        header("Location: index.php");
+        exit();
       }
     else{
         echo "Password does not match";

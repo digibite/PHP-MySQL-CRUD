@@ -4,14 +4,17 @@
 }
 
 body {
-  background: #14424b;
+  /* background: #14424b; Old color*/
+  background-color: #132b4c;
+  height: 100%;
 }
 
 #main-container {
   width: 500px;
   height: 500px;
   margin: 0 auto;
-  background-color: #2b7499;
+  /* background-color: #2b7499; old login form background color*/
+  background-color: #132b4c;
 }
 
 #content-container {
@@ -21,8 +24,15 @@ body {
   padding-top: 20px;
 }
 
-h2 {
-  color: #fff;
+/* h2 {
+  color: #fff; old login title text color
+} */
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  color: #d2e8e9;
+  font-weight: 300;
+  font-size: 2.5em;
 }
 
 .error {
@@ -34,8 +44,20 @@ h2 {
   padding: 10px;
   font-size: 15px;
   color: white;
-  background: rgb(25 81 241);
+  font-family: "Montserrat", sans-serif;
+  /* background: rgb(25 81 241); */
+  background-color: #f6922e;
   border: none;
   border-radius: 5px;
   margin-top: 5px;
+}
+
+#email {
+  border-color: #f6922e;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  transition: 0.2s background-color ease-in-out;
+  border-radius: 10px;
 }

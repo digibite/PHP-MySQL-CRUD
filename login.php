@@ -1,6 +1,6 @@
 <?php
-include "db.php";
 include "Session.php";
+
 Session::checkLogin(); // Checking whether user is logged in or not.
 ?>
 <!DOCTYPE html>
@@ -10,12 +10,18 @@ Session::checkLogin(); // Checking whether user is logged in or not.
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- I found this font in the MoveHQ website. Browser developer tools are the best! Points for attention to detail? lol Just kidding -->
-    <link rel="stylesheet" type="text/css"
-        href="https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&amp;family=Libre+Franklin:wght@400;500">
+    <!-- I found this font in the MoveHQ website. Browser developer tools are the best! Points for attention to 
+    detail? lol Just kidding -->
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400&amp;family=Libre+Franklin:wght@400;500"> -->
     <link rel="stylesheet" href="./stylesheets/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    
 
-    <!-- In production I normally download the library files or would opt for using a faster library like React for example. 
+    <!-- In production I normally download the library files or would opt for using a faster library like 
+    React for example. 
     I love jQuery's simplicity and reliability though. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
     <title>Document</title>
@@ -24,7 +30,8 @@ Session::checkLogin(); // Checking whether user is logged in or not.
     <!-- Simple container to center the content -->
     <div id="main-container">
     <div id="content-container">
-        <h2>User Login</h2>
+        <!-- <h2>User Login</h2> old login text-->
+        <h3>What’s cookin’ good lookin’?</h3>
         <p id="text"></p>
         <p id="message"></p>
         <form action="redirect.php" method="post">
@@ -49,7 +56,7 @@ Session::checkLogin(); // Checking whether user is logged in or not.
         </div>
     </div>
 
-    <!-- Seperating concerns by diving the HTML, from CSS and JS -->
+    <!-- Seperating concerns by dividing the HTML, from CSS and JS -->
 <script src="./js/login.js"></script>
 </body>
 </html>
