@@ -34,7 +34,7 @@ Session::checkLogin(); // Checking whether user is logged in or not.
         <h3>What’s cookin’ good lookin’?</h3>
         <p id="text"></p>
         <p id="message"></p>
-        <form action="redirect.php" method="post">
+        <form id="login-form" action="redirect.php" method="post">
             <table>
                 <tr>
                 <input type="email" id="email" placeholder="Enter email" name="email">

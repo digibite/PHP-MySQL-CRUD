@@ -24,6 +24,10 @@ body {
   padding-top: 20px;
 }
 
+#login-form {
+  width: 500px;
+}
+
 /* h2 {
   color: #fff; old login title text color
 } */
@@ -53,6 +57,16 @@ h3 {
 }
 
 #email {
+  border-color: #f6922e;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  background-color: #f7f7f7;
+  transition: 0.2s background-color ease-in-out;
+  border-radius: 10px;
+}
+
+#password {
   border-color: #f6922e;
   height: 50px;
   line-height: 50px;
