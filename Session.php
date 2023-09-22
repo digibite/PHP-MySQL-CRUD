@@ -16,13 +16,13 @@ public static function set($key,$value){
 public static function get($key){
    if (isset($_SESSION[$key])){
     $result = $_SESSION[$key];
-}
+  }
 
-if (isset($result)) {
+  if (isset($result)) {
     return $result;
-}else{
-  return false;
- }
+  } else {
+    return false;
+  }
 }
 
 public static function checkSession(){
