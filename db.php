@@ -25,7 +25,6 @@ function closeConn() {
 	mysqli_close($dbConn);
 }
 
-
 // more complex and secure DB connection using OOP. This one will be used for user authentication.
 Class Database{
     public $host = 'localhost:3306';
