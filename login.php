@@ -31,7 +31,7 @@ Session::checkLogin(); // Checking whether user is logged in or not.
     <div id="main-container">
     <div id="content-container">
         <!-- <h2>User Login</h2> old login text-->
-        <h3>What’s cookin’ good lookin’?</h3>
+        <h3>Sign in</h3>
         <p id="text"></p>
         <p id="message"></p>
         <form id="login-form" action="redirect.php" method="post">
