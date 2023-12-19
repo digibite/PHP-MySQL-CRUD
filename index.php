@@ -1,7 +1,6 @@
 <?php
-// session_start();
+
 include 'Session.php';
-// Session::checkSession(); // Checking whether user is logged in to redirect to login.php
 Session::checkSession();
 ?>
 
