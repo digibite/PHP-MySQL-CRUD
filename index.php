@@ -59,7 +59,5 @@ Session::checkSession();
     }
 ?>
 
-
 </body>
-
 </html>
