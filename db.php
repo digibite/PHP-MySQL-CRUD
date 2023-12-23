@@ -57,5 +57,5 @@ Class Database{
          } else {
          return false;
         }
-       }
     }
+}
