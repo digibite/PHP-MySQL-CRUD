@@ -1,13 +1,13 @@
-## Installation
+# Installation
 
 First, clone this repository:
 
-# Clone this repository
+### Clone this repository
 
 git clone https://github.com/digibite/PHP-MySQL-CRUD.git
 PHP-MySQL-CRUD
 
-# Download and Install [XAMPP](https://www.apachefriends.org/download.html) (Note: Other PHP Apache and Ngnix servers can be used too, this tutorial will focus XAMPP's Apache and MySQL servers).
+### Download and Install [XAMPP](https://www.apachefriends.org/download.html) (Note: Other PHP Apache and Ngnix servers can be used too, this tutorial will focus XAMPP's Apache and MySQL servers).
 
 2. Once installed search for the XAMPP control panel. On Windows, the default location will be C:\xampp and on MacOS open Spotlight(CMD+Space bar) search for "XAMPP control panel".
 3. Open the XAMPP control panel by double clicking on the X icon with the orange background.
